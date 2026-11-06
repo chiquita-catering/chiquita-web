@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Chiquita Catering | Mexican Food Trucks in San Diego</title>
-<meta name="description" content="Sabroso, auténtico, inolvidable. A fleet of Mexican food trucks across San Diego. Book a truck for your event: (619) 408-2598.">
+<meta name="description" content="Sabroso, auténtico, inolvidable. A fleet of Mexican food trucks across San Diego, available for events, plus a commissary and yard parking for food truck owners. Call (619) 408-2598.">
 <link rel="canonical" href="https://chiquita-catering.github.io/chiquita-web/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0d2a66">
@@ -45,7 +45,7 @@
   "@type": "FoodEstablishment",
   "name": "Chiquita Catering",
   "slogan": "Sabroso, Auténtico, Inolvidable",
-  "description": "A fleet of Mexican food trucks in San Diego, available for events.",
+  "description": "A fleet of Mexican food trucks in San Diego, available for events. Also runs a commissary selling food supplies to food trucks and rents yard parking to food truck operators.",
   "servesCuisine": "Mexican",
   "url": "https://chiquita-catering.github.io/chiquita-web/",
   "logo": "https://chiquita-catering.github.io/chiquita-web/icon-512.png",
@@ -164,6 +164,16 @@ footer.site .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:
 .gallery .ph{aspect-ratio:1}
 @media (max-width:900px){.trucks{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.trucks{grid-template-columns:1fr}}
+
+.biz{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.biz-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.biz-card .num{font:900 15px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+.biz-card h3{font-size:clamp(26px,3vw,34px)}
+.biz-card p{margin:0;color:var(--muted)}
+.biz-card .btn{align-self:flex-start;margin-top:auto}
+.biz-loc{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-weight:600}
+.biz-loc span{color:var(--muted);font-weight:500}
+@media (max-width:760px){.biz{grid-template-columns:1fr}.biz-card{padding:24px}}
 .fab{display:none}
 @media (max-width:760px){
   .hero .wrap,.events,.reviews{grid-template-columns:1fr}
@@ -230,6 +240,32 @@ footer.site .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:
     </div>
   </section>
 
+
+  <!-- ===== COMISARIATO Y YARDA ===== -->
+  <section id="commissary" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">For food truck owners</span>
+        <h2>Commissary &amp; truck parking</h2>
+        <p style="color:var(--muted);margin:0;font-size:18px">Run your own food truck? Our base in San Diego has what you need to stock up and park.</p>
+      </div>
+      <div class="biz">
+        <article class="biz-card">
+          <span class="num">Commissary</span>
+          <h3>Food supplies for food trucks</h3>
+          <p>Our commissary sells the supplies food trucks need to cook and serve. Stock up on your ingredients and supplies before you hit the road.</p>
+          <a class="btn btn-orange" href="tel:+16194082598">Call for prices</a>
+        </article>
+        <article class="biz-card">
+          <span class="num">Yard parking</span>
+          <h3>Park your food truck with us</h3>
+          <p>Need a place to keep your truck? We rent parking space in our yard to other food truck operators.</p>
+          <a class="btn btn-orange" href="tel:+16194082598">Ask about space</a>
+        </article>
+      </div>
+      <div class="biz-loc">9341 Ruffin Ct, San Diego, CA 92123 <span>Call (619) 408-2598 for pricing and availability.</span></div>
+    </div>
+  </section>
 
   <!-- ===== TRUCKS Y RUTAS ===== -->
   <section id="trucks" style="padding-top:0">
